@@ -35,14 +35,14 @@ thindiskimage = GyotoImage("C:/Users/hadri/Documents/Photon ring group (stage LE
 
 ##### FOURIER SLICE #####
 
-## Choose an angle for a slice
-# phimeas = 90
-# ## Computes the Radon projection along this angle
-# thindiskimage.Radon_projection(phimeas)
-# ## Computes the Fourier transform of the Radon (equivalent to a slice at this angle of the 2D FT)
-# thindiskimage.FT_Radon()
-# ## Plots both 
-# thindiskimage.plot_Radon_and_FT(4,'r')
+# Choose an angle for a slice
+phimeas = 90
+## Computes the Radon projection along this angle
+thindiskimage.Radon_projection(phimeas)
+## Computes the Fourier transform of the Radon (equivalent to a slice at this angle of the 2D FT)
+thindiskimage.FT_Radon()
+## Plots both 
+thindiskimage.plot_Radon_and_FT(4,'r')
 
 
 
@@ -52,10 +52,10 @@ bounds = (1100,1200)
 
 ##### VISAMP FIT #####
 
-## Fits the visamp in order to infer the periodicity (corresponding to the diameter of the ring dominating in this baseline domain)
-## Plots this visamp, its minimal/maximal envelopes, the fit 
-##      + (if likelihhods is set to True) the goodness-of-fit as a function of diameter (should be a peaked distribution)
-# print(phimeas,thindiskimage.visamp_fit_with_envelope(bounds,plot=True, likelihoods = True))
+# Fits the visamp in order to infer the periodicity (corresponding to the diameter of the ring dominating in this baseline domain)
+# Plots this visamp, its minimal/maximal envelopes, the fit 
+#      + (if likelihhods is set to True) the goodness-of-fit as a function of diameter (should be a peaked distribution)
+print(phimeas,thindiskimage.visamp_fit_with_envelope(bounds,plot=True, likelihoods = True))
 
 
 ##### SIMPLE CIRCLIPSE FIT #####

@@ -11,7 +11,6 @@ import math
 from scipy.optimize import minimize, curve_fit
 from astropy.io import fits
 from skimage.transform import radon
-from simpson import * # in ~/mypythonlib
 from matplotlib.colors import LogNorm
 from scipy.signal import find_peaks,peak_widths
 import scipy.ndimage
